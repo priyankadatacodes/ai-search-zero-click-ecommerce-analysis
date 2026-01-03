@@ -1,102 +1,117 @@
-# **AI Search & Zero-Click Impact on E-commerce Performance**
+# AI Search & Zero-Click Impact on E-commerce Performance
 
-End-to-end data analytics project analyzing how AI-powered search and zero-click experiences impact conversion, revenue, and funnel performance in an e-commerce business.
+An end-to-end data analytics project analyzing how AI-powered search and zero-click experiences influence conversion, revenue, and funnel performance in an e-commerce business.
 
 ---
 
-## About the Project
+## Why I Built This Project
 
-I built this project to evaluate the **business impact of AI Search and Zero-Click behavior** on an e-commerce platform using a real-world analytics workflow.
+I built this project to evaluate the **real business impact of AI Search and Zero-Click behavior** in e-commerce.
 
-The focus of the analysis is to understand:
-- Whether AI Search improves conversion and revenue
-- How Zero-Click behavior affects funnel depth
-- Where the biggest revenue leakage occurs
-- Which segments (device, category, region) drive performance
+AI search and zero-click experiences are becoming common, but their effect on **revenue and funnel depth** is often unclear. This project focuses on answering practical business questions such as:
+- Does AI Search actually improve revenue?
+- How much value is lost due to Zero-Click behavior?
+- Where exactly does the funnel break?
+- Which segments perform better and why?
 
-This project reflects how I would approach a **real business problem as a data analyst**, combining SQL analysis, Python validation, and BI storytelling.
+I approached this as a **business problem first**, and then used data to support decisions.
 
 ---
 
 ## Business Context
 
-E-commerce platforms are increasingly adopting:
+Modern e-commerce platforms increasingly use:
 - AI-powered search
 - AI-generated summaries
 - Zero-click answers
 
 While these features improve information access, they can also:
 - Reduce product discovery
-- Shorten user journeys
-- Impact conversion and revenue
+- Shorten the customer journey
+- Create hidden revenue leakage
 
-The goal of this project is to evaluate whether **AI Search is driving growth** or **creating hidden revenue loss through Zero-Click behavior**.
+The business needs to understand whether AI Search is a **growth driver** or whether Zero-Click behavior is **hurting monetization**.
 
 ---
 
 ## Problem Statement
 
-Analyze session-level e-commerce data to evaluate the impact of AI Search and Zero-Click experiences on conversion rate, revenue, and funnel performance, and identify opportunities to improve business outcomes without increasing traffic spend.
+Analyze session-level e-commerce data to evaluate the impact of AI Search and Zero-Click experiences on conversion rate, revenue, and funnel performance, and identify opportunities to improve business outcomes without increasing traffic acquisition spend.
 
 ---
 
-## Tools Used
+## Tools I Used
 
 - **SQL**
   - Funnel analysis
   - Conversion and revenue metrics
   - Segment-level analysis
 
-- **Python (Jupyter Notebook)**
-  - Data exploration
-  - KPI validation
+- **Python (Jupyter Notebooks)**
+  - Data exploration and validation
+  - KPI verification
   - Trend analysis
 
 - **Tableau**
   - Interactive dashboard
-  - Business-focused storytelling
+  - Executive-level storytelling
 
 ---
 
 ## Dataset Overview
 
-- Session-level e-commerce dataset  
-- Each row represents one user session  
+The dataset is session-level e-commerce data, where:
+- Each row represents one user session
+- Sessions include search type, funnel progression, and revenue outcome
 
-The dataset captures user behavior across search experience, funnel stages, and revenue outcomes.
-
-Key attributes include:
+Key dimensions include:
 - Search type (AI Search, Classic Search, Zero-Click)
-- Device
+- Device, category, and region
 - Funnel stages (click, add to cart, purchase)
 - Revenue metrics
 
 ---
 
+## How I Approached the Analysis
+Raw Data
+↓
+Data Cleaning & Validation (Python)
+↓
+Load into PostgreSQL
+↓
+SQL Analysis (Funnel, Conversion, Revenue)
+↓
+Python Validation & EDA
+↓
+Tableau Dashboard (KPIs & Insights)
+↓
+Business Insights & Recommendations
+
+
 
 ---
 
-## Analysis Workflow
+## Analysis Breakdown
 
-### 1. SQL Analysis
+### SQL Analysis
 I used SQL to:
-- Calculate conversion rate by search type
-- Analyze funnel drop-offs (click → add to cart → purchase)
+- Measure conversion rate by search type
+- Identify funnel drop-offs (Click → Add-to-Cart → Purchase)
 - Compare AI Search, Classic Search, and Zero-Click performance
-- Analyze performance by key segments
+- Analyze performance by device, category, and region
 
-### 2. Python Analysis
+### Python Analysis
 I used Python to:
-- Validate KPIs
+- Validate KPIs calculated in SQL
 - Explore trends and distributions
-- Support and cross-check SQL and dashboard insights
+- Cross-check findings before visualization
 
-### 3. Tableau Dashboard
+### Tableau Dashboard
 I built a Tableau dashboard to:
-- Track key business KPIs
+- Track core KPIs
 - Visualize funnel impact
 - Compare AI Search vs Zero-Click behavior
-- Present insights in an executive-friendly format
+- Present insights in a format suitable for business stakeholders
 
 ---
 
@@ -115,13 +130,13 @@ I built a Tableau dashboard to:
 
 ## Key Insights
 
-- Overall conversion rate is healthy (around 10 percent)
-- A significant share of sessions are Zero-Click, limiting funnel entry
-- The largest drop-off occurs between Click and Add-to-Cart
-- AI Search contributes more revenue than Classic Search
-- Zero-Click behavior reduces product discovery and monetization
-- Mobile contributes a large share of total revenue
-- Performance varies by category and region, indicating scope for personalization
+- Overall conversion rate is healthy at **~10%**, indicating strong intent
+- **18% of sessions are Zero-Click**, meaning users do not enter the shopping funnel
+- The biggest revenue leakage occurs between **Click and Add-to-Cart**
+- **AI Search generates higher and more consistent revenue** than Classic Search
+- Zero-Click behavior limits product discovery and monetization
+- Mobile and Desktop conversion rates are similar, but mobile drives higher volume
+- Category and regional performance varies, indicating personalization opportunities
 
 ---
 
@@ -129,8 +144,8 @@ I built a Tableau dashboard to:
 
 - Improving the Click → Add-to-Cart stage can unlock significant revenue
 - Reducing Zero-Click dead ends increases funnel depth
-- AI Search is a revenue driver when it pushes users deeper into the funnel
-- Growth opportunities exist without increasing traffic spend
+- AI Search is a revenue driver when it pushes users toward exploration
+- Revenue growth is possible **without increasing traffic spend**
 
 ---
 
@@ -138,25 +153,25 @@ I built a Tableau dashboard to:
 
 **Short-Term**
 - Improve product page clarity and trust signals
-- Reduce friction in add-to-cart and checkout steps
-- Add clearer CTAs within AI and Zero-Click experiences
+- Reduce friction in add-to-cart and checkout
+- Add clearer calls-to-action in AI and Zero-Click experiences
 
 **Long-Term**
-- Redesign Zero-Click experiences to support discovery
+- Redesign Zero-Click experiences to encourage exploration
 - Optimize AI Search behavior by category
-- Personalize experience by region and device
+- Personalize experiences by region and device
 - Continuously test search and funnel designs
 
 ---
 
-## Conclusion
+## Final Takeaway
 
-AI Search improves engagement and revenue when it guides users into the shopping funnel. However, excessive Zero-Click behavior creates significant funnel leakage. Optimizing product engagement and AI-guided discovery can drive sustainable revenue growth without increasing acquisition costs.
+AI Search improves revenue when it guides users into the shopping funnel. However, excessive Zero-Click behavior and drop-offs at the Add-to-Cart stage create measurable revenue leakage. Focusing on funnel efficiency and AI-guided discovery can drive sustainable growth without increasing acquisition costs.
 
 ---
 
 ## Author
 
-Priyanka Lakra | Data Analyst | Business Focused  
-End-to-end analytics project built to demonstrate real-world data analyst thinking.
+Priyanka Lakra  
+Data Analyst | Business-Focused Analytics  
 
