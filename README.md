@@ -40,6 +40,15 @@ Analyze session-level e-commerce data to evaluate the impact of AI Search and Ze
 
 ---
 
+## Tableau Dashboard
+
+The final Tableau dashboard provides an executive-level view of the impact of **AI Search and Zero-Click behavior** on e-commerce performance.  
+It highlights key KPIs, funnel drop-offs, revenue trends, and segment-level insights.
+
+![AI Search & Zero-Click Dashboard](dashboards/ai_search_zero_click_dashboard_img.png)
+
+---
+
 ## Tools I Used
 
 - **SQL**
