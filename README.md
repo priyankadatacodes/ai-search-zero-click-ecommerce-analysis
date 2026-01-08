@@ -82,21 +82,13 @@ Key dimensions include:
 ---
 
 ## How I Approached the Analysis
-Raw Data
-↓
-Data Cleaning & Validation (Python)
-↓
-Load into PostgreSQL
-↓
-SQL Analysis (Funnel, Conversion, Revenue)
-↓
-Python Validation & EDA
-↓
-Tableau Dashboard (KPIs & Insights)
-↓
-Business Insights & Recommendations
-
-
+→ Raw Data
+→ Data Cleaning & Validation (Python)
+→ Load into PostgreSQL
+→ SQL Analysis (Funnel, Conversion, Revenue)
+→ Python Validation & EDA
+→ Tableau Dashboard (KPIs & Insights)
+→ Business Insights & Recommendations
 
 ---
 
