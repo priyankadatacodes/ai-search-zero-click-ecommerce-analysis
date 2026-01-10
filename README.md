@@ -1,178 +1,171 @@
-# AI Search & Zero-Click Impact on E-commerce Performance
+# **AI Search & Zero-Click Impact on E-commerce Performance**
 
-An end-to-end data analytics project analyzing how AI-powered search and zero-click experiences influence conversion, revenue, and funnel performance in an e-commerce business.
-
----
-
-## Why I Built This Project
-
-I built this project to evaluate the **real business impact of AI Search and Zero-Click behavior** in e-commerce.
-
-AI search and zero-click experiences are becoming common, but their effect on **revenue and funnel depth** is often unclear. This project focuses on answering practical business questions such as:
-- Does AI Search actually improve revenue?
-- How much value is lost due to Zero-Click behavior?
-- Where exactly does the funnel break?
-- Which segments perform better and why?
-
-I approached this as a **business problem first**, and then used data to support decisions.
+This project analyzes how AI-powered search and zero-click experiences affect conversion, revenue, and funnel performance in an e-commerce business.  
+The focus is on understanding where business value is created and where revenue is lost, not just on tools.
 
 ---
 
-## Business Context
+## **Why I Built This Project**
 
-Modern e-commerce platforms increasingly use:
-- AI-powered search
-- AI-generated summaries
-- Zero-click answers
-
-While these features improve information access, they can also:
-- Reduce product discovery
-- Shorten the customer journey
-- Create hidden revenue leakage
-
-The business needs to understand whether AI Search is a **growth driver** or whether Zero-Click behavior is **hurting monetization**.
+AI Search and zero-click experiences are becoming standard in modern e-commerce platforms.  
+Many teams still do not clearly know whether AI Search improves revenue, how much impact zero-click behavior has, and where users drop in the funnel.  
+This project quantifies that impact using data and answers these questions from a business decision-making point of view.
 
 ---
 
-## Problem Statement
+## **Business Context**
 
-Analyze session-level e-commerce data to evaluate the impact of AI Search and Zero-Click experiences on conversion rate, revenue, and funnel performance, and identify opportunities to improve business outcomes without increasing traffic acquisition spend.
-
----
-
-## Tableau Dashboard
-
-The final Tableau dashboard provides an executive-level view of the impact of **AI Search and Zero-Click behavior** on e-commerce performance.  
-It highlights key KPIs, funnel drop-offs, revenue trends, and segment-level insights.
-
-![AI Search & Zero-Click Dashboard](dashboards/ai_search_zero_click_dashboard_img.png)
+E-commerce platforms increasingly rely on AI-powered search results, AI-generated answers, and zero-click experiences.  
+These features improve speed and convenience but can also reduce product discovery, shorten the shopping journey, and create silent revenue leakage.  
+The core question is whether AI Search is a growth lever or if zero-click behavior is hurting monetization.
 
 ---
 
-## Tools I Used
+## **Problem Statement**
 
-- **SQL**
-  - Funnel analysis
-  - Conversion and revenue metrics
-  - Segment-level analysis
-
-- **Python (Jupyter Notebooks)**
-  - Data exploration and validation
-  - KPI verification
-  - Trend analysis
-
-- **Tableau**
-  - Interactive dashboard
-  - Executive-level storytelling
+Analyze session-level e-commerce data to measure the impact of AI Search and zero-click behavior on conversion rate, revenue, and funnel performance, and identify improvement opportunities without increasing traffic acquisition costs.
 
 ---
 
-## Dataset Overview
+## **Hypotheses**
 
-The dataset is session-level e-commerce data, where:
-- Each row represents one user session
-- Sessions include search type, funnel progression, and revenue outcome
+- AI Search sessions convert better than Classic Search sessions.  
+- A meaningful portion of sessions end as zero-click, limiting funnel depth.  
+- The largest revenue drop happens before users reach Add-to-Cart.  
+- Zero-click behavior negatively impacts product discovery and revenue.  
 
-Key dimensions include:
-- Search type (AI Search, Classic Search, Zero-Click)
-- Device, category, and region
-- Funnel stages (click, add to cart, purchase)
-- Revenue metrics
+These hypotheses guide the analysis instead of exploring the data blindly.
 
 ---
 
-## How I Approached the Analysis
-→ Raw Data
-→ Data Cleaning & Validation (Python)
-→ Load into PostgreSQL
-→ SQL Analysis (Funnel, Conversion, Revenue)
-→ Python Validation & EDA
-→ Tableau Dashboard (KPIs & Insights)
-→ Business Insights & Recommendations
+## **Dataset Overview**
+
+- **Data Type:** Session-level e-commerce data  
+- **Granularity:** One row per user session  
+
+Each session includes:  
+- Search type (AI Search, Classic Search, Zero-Click)  
+- Funnel progression (Click → Add-to-Cart → Purchase)  
+- Revenue outcome  
+- Device, category, and region information  
 
 ---
 
-## Analysis Breakdown
+## **Tools Used**
 
-### SQL Analysis
-I used SQL to:
-- Measure conversion rate by search type
-- Identify funnel drop-offs (Click → Add-to-Cart → Purchase)
-- Compare AI Search, Classic Search, and Zero-Click performance
-- Analyze performance by device, category, and region
+- **SQL**  
+  - Funnel analysis  
+  - Conversion and revenue calculations  
+  - Segment-level comparisons  
 
-### Python Analysis
-I used Python to:
-- Validate KPIs calculated in SQL
-- Explore trends and distributions
-- Cross-check findings before visualization
+- **Python (Jupyter Notebook)**  
+  - Data cleaning and validation  
+  - KPI cross-checks  
+  - Exploratory analysis  
 
-### Tableau Dashboard
-I built a Tableau dashboard to:
-- Track core KPIs
-- Visualize funnel impact
-- Compare AI Search vs Zero-Click behavior
-- Present insights in a format suitable for business stakeholders
+- **Tableau**  
+  - KPI dashboards  
+  - Funnel visualizations  
+  - Business storytelling  
 
 ---
 
-## Key KPIs
+## **Analysis Approach**
 
-| KPI | Description |
-|-----|-------------|
-| Sessions | Total user sessions |
-| Orders | Completed purchases |
-| Conversion Rate | Orders / Sessions |
-| Revenue | Total sales value |
-| Add-to-Cart Rate | Add to Cart / Sessions |
-| Zero-Click % | Zero-Click Sessions / Total Sessions |
+The analysis follows a clear, repeatable workflow:  
 
----
-
-## Key Insights
-
-- Overall conversion rate is healthy at **~10%**, indicating strong intent
-- **18% of sessions are Zero-Click**, meaning users do not enter the shopping funnel
-- The biggest revenue leakage occurs between **Click and Add-to-Cart**
-- **AI Search generates higher and more consistent revenue** than Classic Search
-- Zero-Click behavior limits product discovery and monetization
-- Mobile and Desktop conversion rates are similar, but mobile drives higher volume
-- Category and regional performance varies, indicating personalization opportunities
+1. Data cleaning and validation in Python.  
+2. Load cleaned data into PostgreSQL.  
+3. SQL-based analysis for funnels, conversion, and revenue.  
+4. Python checks to validate SQL outputs.  
+5. Tableau dashboard creation for stakeholder-ready insights.  
+6. Translate findings into business recommendations.
 
 ---
 
-## Business Impact
+## **Analysis Breakdown**
 
-- Improving the Click → Add-to-Cart stage can unlock significant revenue
-- Reducing Zero-Click dead ends increases funnel depth
-- AI Search is a revenue driver when it pushes users toward exploration
-- Revenue growth is possible **without increasing traffic spend**
+### **SQL Analysis**
 
----
+- Calculated conversion rates by search type.  
+- Identified funnel drop-offs (Click → Add-to-Cart → Purchase).  
+- Compared AI Search, Classic Search, and Zero-Click sessions.  
+- Analyzed performance by device, category, and region.  
 
-## Recommendations
+### **Python Analysis**
 
-**Short-Term**
-- Improve product page clarity and trust signals
-- Reduce friction in add-to-cart and checkout
-- Add clearer calls-to-action in AI and Zero-Click experiences
+- Validated key KPIs derived from SQL.  
+- Checked trends and distributions.  
+- Ensured numbers are consistent before visualization.  
 
-**Long-Term**
-- Redesign Zero-Click experiences to encourage exploration
-- Optimize AI Search behavior by category
-- Personalize experiences by region and device
-- Continuously test search and funnel designs
+### **Tableau Dashboard**
 
----
-
-## Final Takeaway
-
-AI Search improves revenue when it guides users into the shopping funnel. However, excessive Zero-Click behavior and drop-offs at the Add-to-Cart stage create measurable revenue leakage. Focusing on funnel efficiency and AI-guided discovery can drive sustainable growth without increasing acquisition costs.
+- Tracks core business KPIs.  
+- Highlights funnel leakage points.  
+- Compares AI Search vs Zero-Click behavior in a stakeholder-friendly view.
 
 ---
 
-## Author
+## **Key KPIs Tracked**
 
-Priyanka Lakra  
-Data Analyst | Business-Focused Analytics  
+| **KPI**          | **Description**                      |
+|------------------|--------------------------------------|
+| Sessions         | Total user sessions                  |
+| Orders           | Completed purchases                  |
+| Conversion Rate  | Orders / Sessions                    |
+| Revenue          | Total sales value                    |
+| Add-to-Cart Rate | Add-to-Cart / Sessions               |
+| Zero-Click %     | Zero-Click Sessions / Total Sessions |
 
+---
+
+## **Key Insights**
+
+- Overall conversion rate is around 10%, showing strong user intent.  
+- About 18% of sessions are zero-click, where users never enter the shopping funnel.  
+- The biggest revenue drop happens between Click and Add-to-Cart.  
+- AI Search sessions generate higher and more consistent revenue than Classic Search.  
+- Zero-click behavior limits product discovery and monetization.  
+- Mobile and desktop have similar conversion rates, but mobile brings more volume.  
+- Category- and region-level performance varies, creating room for personalization.
+
+---
+
+## **Business Impact**
+
+- Improving the Click → Add-to-Cart stage can unlock significant revenue.  
+- Reducing zero-click dead ends increases funnel depth and engagement.  
+- AI Search acts as a revenue driver when it pushes users into the product journey.  
+- Revenue can grow without increasing marketing spend by fixing funnel efficiency.
+
+---
+
+## **Recommendations**
+
+### **Short-Term**
+
+- Improve product page clarity and trust signals.  
+- Reduce friction in Add-to-Cart and checkout steps.  
+- Add stronger calls-to-action in AI and zero-click experiences.  
+
+### **Long-Term**
+
+- Redesign zero-click experiences to promote product discovery.  
+- Optimize AI Search behavior by category.  
+- Personalize experiences by region and device.  
+- Continuously test and iterate on search and funnel designs.
+
+---
+
+## **Final Takeaway**
+
+AI Search improves revenue when it actively pushes users into the shopping funnel.  
+Zero-click behavior and drop-offs before Add-to-Cart create measurable revenue leakage.  
+Focusing on funnel efficiency and AI-guided discovery enables sustainable growth without increasing acquisition costs.
+
+---
+
+## **Author**
+
+**Priyanka Lakra**  
+Data Analyst \| Business-Focused Analytics
